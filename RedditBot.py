@@ -19,9 +19,6 @@ waffle_quotes = ['I have always loved Waffle House. It\'s been like an oasis in 
                     'Life is too short to wonder where you hid your waffle maker. -Paula Deen']
 
 for submission in subreddit.hot(limit=10):
-    #print()
-    #print(submission.title)
-
     for comment in submission.comments:
         if hasattr(comment, "body"):
             comment_lower = comment.body.lower()
